@@ -1,0 +1,51 @@
+<html>
+<head>
+	<title></title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+	<style>
+	* {
+		box-sizing: border-box;
+	}
+	ul {
+		opacity: 0;
+		transition: all .2s 2s;
+	}
+	button.test {
+		display: block;
+		width: 100%;
+		height: 5em;
+	}
+	button.test:active ~ ul {
+		opacity: 1;
+		transition: all .2s .5s;
+	}
+	ul {margin: 0; padding: 0; }
+
+	li {
+		list-style: none;
+		display: inline-block;
+		width: 32%;
+		line-height: 3em;
+		padding: 1em;
+		text-align: center: 
+	}
+
+	li>button {
+		padding: 1em;
+		display: inline-block;
+		margin: 1em auto;
+		width: 100%;
+	}
+	</style>
+</head>
+<body>
+	<button class="test">hold</button>
+	<ul>
+		<li><button>option 1</button></li>
+		<li><button>option 2</button></li>
+		<li><button>option 3</button></li>
+	</ul>
+</body>
+</html>
